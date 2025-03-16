@@ -1,5 +1,5 @@
 // app/api/user/route.ts
-export async function GET(request: Request) {
+export async function GET() {
     return new Response(JSON.stringify({ user: "John Doe" }), {
         status: 200,
         headers: { "Content-Type": "application/json" }
