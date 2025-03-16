@@ -1,0 +1,14 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "content": "오늘의 할 일",
+      "completed": true
+    },
+    {
+      "id": 2,
+      "content": "친구와 노래방 가기",
+      "completed": false
+    }
+  ]
+}
