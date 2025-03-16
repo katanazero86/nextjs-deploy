@@ -8,6 +8,7 @@ export default function Home() {
     return (
         <div>
             <Header/>
+            개발 브랜치 테스트
             {process.env.HELLO}
             <br/>
             {process.env.MSG}
