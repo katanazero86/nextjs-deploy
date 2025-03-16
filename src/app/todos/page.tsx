@@ -2,9 +2,10 @@
 import {createTodoAction} from "@/actions/todoActions";
 
 export default async function TodosPage() {
-    const res = await fetch('http://localhost:8080/todos', {
-        cache: 'force-cache',
-    });
+    // 배포를 위한 주석 처리
+    // const res = await fetch('http://localhost:8080/todos', {
+    //     cache: 'force-cache',
+    // });
     const todos: { id: string; content: string; completed: boolean }[] = await res.json();
 
     return (
