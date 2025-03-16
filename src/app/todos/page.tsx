@@ -6,7 +6,7 @@ export default async function TodosPage() {
     // const res = await fetch('http://localhost:8080/todos', {
     //     cache: 'force-cache',
     // });
-    const todos: { id: string; content: string; completed: boolean }[] = await res.json();
+    // const todos: { id: string; content: string; completed: boolean }[] = await res.json();
 
     return (
         <div className='p-2 border border-dashed border-indigo-500 rounded'>
@@ -19,13 +19,13 @@ export default async function TodosPage() {
                     </button>
                 </form>
             </div>
-            <div className='flex flex-col gap-2'>
-                {todos.map(todo => <div key={todo.id} className='not-first:border-t not-first:border-gray-400'>
-                    <p>{todo.id}</p>
-                    <p>{todo.content}</p>
-                    <p>{todo.completed ? '완료' : '미완료'}</p>
-                </div>)}
-            </div>
+            {/*<div className='flex flex-col gap-2'>*/}
+            {/*    {todos.map(todo => <div key={todo.id} className='not-first:border-t not-first:border-gray-400'>*/}
+            {/*        <p>{todo.id}</p>*/}
+            {/*        <p>{todo.content}</p>*/}
+            {/*        <p>{todo.completed ? '완료' : '미완료'}</p>*/}
+            {/*    </div>)}*/}
+            {/*</div>*/}
         </div>
     )
 }
